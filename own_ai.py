@@ -52,6 +52,7 @@ model.fit(X, responses)
 def listen_command(q):
     try:
         with sr.Microphone() as source:
+            print("github: whitedevil999123")
             print("Listening for commands...")
             audio = recognizer.listen(source)
         command = recognizer.recognize_google(audio)
@@ -199,7 +200,7 @@ def click_on_screen(x, y):
     except Exception as e:
         print("Error occurred while clicking on screen:", e)
         speak("Error occurred while clicking on screen.")
-
+#github https://github.com/whitedevil999123/most_advanced_ai/edit/main/own_ai.py
 # Function to type text
 def type_text(text):
     try:
@@ -330,7 +331,7 @@ def stop_recording(task_name):
     except Exception as e:
         print("Error occurred while saving recorded tasks:", e)
         speak("Error occurred while saving recorded tasks.")
-
+#instagram: @a__balyan
 # Function to replay a task
 def replay_task(task_name):
     try:
@@ -351,7 +352,7 @@ def replay_task(task_name):
     except Exception as e:
         print("Error occurred while replaying the task:", e)
         speak("Error occurred while replaying the task.")
-
+        
 # Helper functions to record actions
 def record_click(x, y):
     recorded_tasks.append({'action_type': 'click', 'details': {'x': x, 'y': y}})
@@ -392,6 +393,7 @@ def prompt_for_new_command(command):
     new_command_window.mainloop()
 
 # Function to handle and train on unrecognized commands
+# insta: @a__balyan
 def train_on_unrecognized_commands():
     while True:
         command, action = feedback_queue.get()
